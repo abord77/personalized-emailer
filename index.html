@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <title>Skill Issue</title>
+    <link rel="icon" type="image/x-icon" href="coffee.jpeg">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="dark-mode-apply">
+    
+    <h1> Personalised Newsletter </h1>
+
+    <!-- PERSONAL INFORMATION-->
+    <b> Please enter the following information to register: </b>
+
+    <div class="input-container">
+       
+     
+    <form id = "input-form">
+        <label for="Email" id = "email-label">E-mail Address:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="fname" id = "fname-label">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname" id = "lname-label">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+      <br><br><br> <b> Select the updates you want to receive:</b> <br>
+      
+      <!-- EMAIL PREFERENCES-->
+        <input type="checkbox" id = "weather" name="weather-label">
+        <label for="Weather" id = "weather-label">Weather updates</label><br>
+
+
+        <input type="checkbox" id = "events-checkbox" name="events-label">
+        <label for="events-checkbox" id = "events-label" >Waterloo Daily events:</label>
+        
+        <div id="events-input-field-container">
+            <label>
+                iCal link from <a href="https://portal.uwaterloo.ca"> Portal</a>:
+                <input type="text" id="input-field" name="events-input">
+            </label>
+        </div>
+
+        <input type="checkbox" id = "wusa-events" name="checkbox-input">
+        <label for="wusa-events">WUSA events:</label><br>
+
+
+        <input type="checkbox" id = "personal-events" name="personal-toggle">
+        <label for="personal-events">Merge with personal events?</label>
+        
+        <div id="personal-input-field-container">
+            <label>
+                Updating iCal link of personal calendar:</a>
+                <input type="text" id="input-field" name="personalcal-input">
+            </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+	<!-- Java Call-->
+    <applet code="Main.class"  width="0" height="0">
+        <param name="x" value="5">
+        <param name="y" value="10">
+    </applet>
+	
+    <!-- This should be in a Javascript file, so lol-->
+	<script src = "main.js"></script>
+
+    <button id="dark-mode-btn" onclick="changeId()">Dark mode</button>   
+</body>
+</html> <!-- dataURL-->

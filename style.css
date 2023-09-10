@@ -1,0 +1,37 @@
+#personal-input-field-container, #events-input-field-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+#events-input-field-container.show, #personal-input-field-container.show {
+    max-height: 100px;
+    transition: max-height 0.5s ease-in;
+}
+
+h1{
+    text-align: center;
+}
+body{
+    background-color: aqua;
+}
+#email, #fname, #lname{
+    width: 50%;
+    vertical-align: middle;
+}
+#email-label, #fnmame-label, #lname-label, #weather-label, #events-label{
+    text-align: left;
+}
+.dark-mode {
+    background-color: #333030;
+    color: #bebdbd;
+}
+
+
+
+
+#dark-mode-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }  
